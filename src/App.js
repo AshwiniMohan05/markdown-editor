@@ -1,5 +1,5 @@
 import React from 'react';
-import { MarkDownApp } from "./MarkdownApp";
+import { MarkDownApp } from "./components/markdown-app";
 import './App.css';
 
 function App() {
