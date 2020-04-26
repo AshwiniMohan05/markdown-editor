@@ -33,7 +33,7 @@ export const MarkdownEditor = ({handleDropdown, updateMarkdownArea, markdown, th
             fontSize={themeObj.fontSize}
           >
             <div
-              className="preview"
+              className="editor"
               dangerouslySetInnerHTML={{__html: marked(markdown)}}
             ></div>
           </Container>
