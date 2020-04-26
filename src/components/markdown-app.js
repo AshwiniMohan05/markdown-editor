@@ -6,19 +6,19 @@ import { defaultMarkdownText } from "../constants";
 
 export const MarkDownApp = () => {
   const [markdown, setmarkdown] = useState(defaultMarkdownText);
-  const [value, setValue] = useState('');
-  const themeObj = value
-  ? markdownThemeOptions.themes.find(item => item.value === value)
+  const [theme, setTheme] = useState('');
+  const themeObj = theme
+  ? markdownThemeOptions.themes.find(item => item.value === theme)
   : {};
 
-  const updateMarkdown = e => setmarkdown(e.target.value);
-  const handleDropdown = e => setValue(e.value);
+  const updateMarkdownArea = e => setmarkdown(e.target.value);
+  const handleDropdown = e => setTheme(e.value);
 
   return (
     <ThemeProvider theme={themeObj}>
         <MarkdownEditor
         handleDropdown={handleDropdown}
-        updateMarkdown={updateMarkdown}
+        updateMarkdown={updateMarkdownArea}
         markdown={markdown}
         themeObj={themeObj}
       />

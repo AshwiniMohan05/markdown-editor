@@ -11,7 +11,7 @@ const Container = styled.div`
   font-size: ${props => props.fontSize};
 `;
 
-export const MarkdownEditor = ({handleDropdown, updateMarkdown, markdown, themeObj}) => (
+export const MarkdownEditor = ({handleDropdown, updateMarkdownArea, markdown, themeObj}) => (
     <React.Fragment>
         <h1 className="heading">MARK DOWN THEMING APP</h1>
         <Select
@@ -24,7 +24,7 @@ export const MarkdownEditor = ({handleDropdown, updateMarkdown, markdown, themeO
         <textarea
           className="text-area"
           value={markdown}
-          onChange={updateMarkdown}
+          onChange={updateMarkdownArea}
         />
         {markdown && (
           <Container
