@@ -5,6 +5,7 @@ import { MarkdownEditor } from "../components/MarkdownEditor";
 import { defaultMarkdownText } from "../constants";
 
 export const MarkDownApp = () => {
+  
   const [markdown, setmarkdown] = useState(defaultMarkdownText);
   const [theme, setTheme] = useState('');
   const themeObj = theme
