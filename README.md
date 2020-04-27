@@ -11,3 +11,5 @@ npm install
 npm start
 
 ## Deployment
+
+https://zealous-feynman-e165fe.netlify.app/
