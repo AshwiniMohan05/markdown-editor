@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { ThemeProvider } from 'react-jss';
 import { markdownThemeOptions } from '../theme';
-import { MarkdownEditor } from "../MarkdownEditor";
+import { MarkdownEditor } from "../components/MarkdownEditor";
 import { defaultMarkdownText } from "../constants";
 
 export const MarkDownApp = () => {
@@ -18,7 +18,7 @@ export const MarkDownApp = () => {
     <ThemeProvider theme={themeObj}>
         <MarkdownEditor
         handleDropdown={handleDropdown}
-        updateMarkdown={updateMarkdownArea}
+        updateMarkdownArea={updateMarkdownArea}
         markdown={markdown}
         themeObj={themeObj}
       />

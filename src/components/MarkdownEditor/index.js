@@ -2,7 +2,7 @@ import React from "react";
 import marked from 'marked';
 import styled from 'styled-components'
 import Select from 'react-select';
-import { markdownThemeOptions } from '../theme';
+import { markdownThemeOptions } from '../../theme';
 import "./markdown-editor.css";
 
 const Container = styled.div`
@@ -33,7 +33,7 @@ export const MarkdownEditor = ({handleDropdown, updateMarkdownArea, markdown, th
             fontSize={themeObj.fontSize}
           >
             <div
-              className="preview"
+              className="editor"
               dangerouslySetInnerHTML={{__html: marked(markdown)}}
             ></div>
           </Container>

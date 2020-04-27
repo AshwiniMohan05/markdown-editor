@@ -7,6 +7,7 @@ Markdown is a lightweight markup language with plain-text-formatting syntax. Its
 To run the project locally:
 
 npm install
+
 npm start
 
 ## Deployment
